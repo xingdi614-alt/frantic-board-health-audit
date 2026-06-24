@@ -1,0 +1,25 @@
+{
+  "schema": "runx.verify_verdict.v1",
+  "receipt_id": "sha256:272106496e944b2c5cd0b557840f5a71ea64d2f3ab080ad0c5ed3cc739f3948f",
+  "valid": true,
+  "digest": {
+    "status": "valid",
+    "expected": "sha256:ed2bfa0155cc6e3b49f5a09147f1f58c0e33fdd42733849a85ca97a43153f2da",
+    "actual": "sha256:ed2bfa0155cc6e3b49f5a09147f1f58c0e33fdd42733849a85ca97a43153f2da"
+  },
+  "content_address": {
+    "status": "valid",
+    "expected": "sha256:272106496e944b2c5cd0b557840f5a71ea64d2f3ab080ad0c5ed3cc739f3948f",
+    "actual": "sha256:272106496e944b2c5cd0b557840f5a71ea64d2f3ab080ad0c5ed3cc739f3948f"
+  },
+  "signature": {
+    "mode": "production",
+    "status": "valid",
+    "kid": "xingdi614-alt-frantic43-20260624-v0613"
+  },
+  "lineage": {
+    "status": "unverified",
+    "message": "single receipt verification cannot prove receipt-tree lineage"
+  },
+  "findings": []
+}

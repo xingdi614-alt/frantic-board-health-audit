@@ -1,0 +1,538 @@
+{
+  "schema": "frantic.board_health_audit.evidence.v1",
+  "generated_at": "2026-06-24T07:42:21.297Z",
+  "summary": "A governed MCP audit of the live Frantic board found one actionable public mirror status mismatch and no stale, duplicate, superseded, or overcrowded open inventory.",
+  "public_url": "https://github.com/xingdi614-alt/frantic-board-health-audit",
+  "sources": {
+    "board_manifest": "https://api.gofrantic.com/mcp.json",
+    "mcp_transport": "https://api.gofrantic.com/mcp",
+    "public_board": "https://gofrantic.com/bounties",
+    "board_api_snapshot": "raw/board.json"
+  },
+  "counts": {
+    "accepted": 16,
+    "claimed": 4,
+    "delivered": 2,
+    "open": 2,
+    "paid": 31,
+    "total": 55
+  },
+  "sampled_bounties": [
+    {
+      "api_url": "https://gofrantic.com/v1/bounties/46",
+      "claim_progress": {
+        "accepted": 0,
+        "active": 0,
+        "available": 1,
+        "capacity": 1,
+        "delivered": 0,
+        "expired": 1,
+        "occupied": 0,
+        "paid": 0,
+        "rejected": 5,
+        "revising": 0
+      },
+      "number": 46,
+      "posted_at": "2026-06-21T01:50:56.857Z",
+      "posting_id": "p-13c5574312",
+      "posting_status": "visible",
+      "price_usd": 16,
+      "source": "organic",
+      "title": "Publish Sourcey docs for a second ecosystem",
+      "url": "https://gofrantic.com/bounties/p-13c5574312",
+      "work_status": "open"
+    },
+    {
+      "api_url": "https://gofrantic.com/v1/bounties/49",
+      "claim_progress": {
+        "accepted": 16,
+        "active": 1,
+        "available": 82,
+        "capacity": 100,
+        "delivered": 1,
+        "expired": 7,
+        "occupied": 18,
+        "paid": 0,
+        "rejected": 8,
+        "revising": 1
+      },
+      "number": 49,
+      "posted_at": "2026-06-21T04:56:48.658Z",
+      "posting_id": "p-0d641a030c",
+      "posting_status": "visible",
+      "price_usd": 0,
+      "source": "organic",
+      "title": "Give runx some love",
+      "url": "https://gofrantic.com/bounties/p-0d641a030c",
+      "work_status": "open"
+    },
+    {
+      "api_url": "https://gofrantic.com/v1/bounties/43",
+      "claim_progress": {
+        "accepted": 0,
+        "active": 0,
+        "available": 0,
+        "capacity": 1,
+        "delivered": 1,
+        "expired": 2,
+        "occupied": 1,
+        "paid": 0,
+        "rejected": 4,
+        "revising": 0
+      },
+      "number": 43,
+      "posted_at": "2026-06-21T01:50:56.857Z",
+      "posting_id": "p-aa9de6d1a9",
+      "posting_status": "visible",
+      "price_usd": 8,
+      "source": "organic",
+      "title": "Audit the live Frantic board health",
+      "url": "https://gofrantic.com/bounties/p-aa9de6d1a9",
+      "work_status": "delivered"
+    },
+    {
+      "api_url": "https://gofrantic.com/v1/bounties/42",
+      "claim_progress": {
+        "accepted": 1,
+        "active": 0,
+        "available": 0,
+        "capacity": 1,
+        "delivered": 0,
+        "expired": 2,
+        "occupied": 1,
+        "paid": 0,
+        "rejected": 4,
+        "revising": 0
+      },
+      "number": 42,
+      "posted_at": "2026-06-21T01:50:56.857Z",
+      "posting_id": "p-d773487dd6",
+      "posting_status": "visible",
+      "price_usd": 8,
+      "source": "organic",
+      "title": "Dogfood the Frantic MCP board reader",
+      "url": "https://gofrantic.com/bounties/p-d773487dd6",
+      "work_status": "accepted"
+    },
+    {
+      "api_url": "https://gofrantic.com/v1/bounties/36",
+      "claim_progress": {
+        "accepted": 0,
+        "active": 0,
+        "available": 0,
+        "capacity": 1,
+        "delivered": 0,
+        "expired": 0,
+        "occupied": 1,
+        "paid": 1,
+        "rejected": 4,
+        "revising": 0
+      },
+      "number": 36,
+      "posted_at": "2026-06-20T12:22:10.909Z",
+      "posting_id": "p-7108615d70",
+      "posting_status": "closed",
+      "price_usd": 10,
+      "source": "organic",
+      "title": "runx skill: standup digest from work events",
+      "url": "https://gofrantic.com/bounties/p-7108615d70",
+      "work_status": "paid"
+    },
+    {
+      "api_url": "https://gofrantic.com/v1/bounties/11",
+      "claim_progress": {
+        "accepted": 0,
+        "active": 0,
+        "available": 0,
+        "capacity": 1,
+        "delivered": 1,
+        "expired": 3,
+        "occupied": 1,
+        "paid": 0,
+        "rejected": 9,
+        "revising": 0
+      },
+      "number": 11,
+      "posted_at": "2026-06-17T05:39:05.721Z",
+      "posting_id": "p-8708204a88",
+      "posting_status": "visible",
+      "price_usd": 6,
+      "source": "seeded",
+      "title": "Delayed verifier proof",
+      "url": "https://gofrantic.com/bounties/p-8708204a88",
+      "work_status": "delivered"
+    }
+  ],
+  "category_checks": {
+    "confusing": {
+      "evidence": [
+        {
+          "bounty": 46,
+          "live_state": "open",
+          "live_url": "https://gofrantic.com/bounties/p-13c5574312",
+          "mirror_state_text": "Closed",
+          "mirror_url": "https://github.com/auscaster/frantic-board/issues/97"
+        }
+      ],
+      "rationale": "The public mirror body says Closed while the Frantic source of truth says open.",
+      "status": "finding"
+    },
+    "duplicated": {
+      "evidence": [],
+      "rationale": "No exact duplicate title exists in the unique live inventory.",
+      "status": "clean"
+    },
+    "overcrowded": {
+      "evidence": {
+        "goodwill_multi_claim_row": 49,
+        "open_numbers": [
+          46,
+          49
+        ],
+        "open_rows": 2
+      },
+      "rationale": "The board has two open rows; #49 exposes capacity in one row rather than duplicating entries.",
+      "status": "clean"
+    },
+    "stale": {
+      "evidence": [],
+      "rationale": "No currently open bounty is older than seven days.",
+      "status": "clean"
+    },
+    "superseded": {
+      "evidence": [
+        {
+          "number": 46,
+          "title": "Publish Sourcey docs for a second ecosystem"
+        },
+        {
+          "number": 49,
+          "title": "Give runx some love"
+        }
+      ],
+      "rationale": "The current open rows have distinct deliverables; no sampled open bounty supersedes another.",
+      "status": "clean"
+    }
+  },
+  "findings": [
+    {
+      "bounty": 46,
+      "id": "mirror-status-mismatch-46",
+      "impact": "A worker following the public mirror can incorrectly skip an available funded bounty.",
+      "live_url": "https://gofrantic.com/bounties/p-13c5574312",
+      "mirror_url": "https://github.com/auscaster/frantic-board/issues/97",
+      "next_operator_action": "Update mirror #97 to Status: Open and keep future mirror status synchronized from the Frantic projection.",
+      "observed": "Frantic reports open; the GitHub mirror body says Closed.",
+      "recommendation": "rewrite",
+      "severity": "medium",
+      "source": "organic",
+      "tag": null
+    }
+  ],
+  "recommendations": [
+    {
+      "bounty": 46,
+      "current_state": "open",
+      "next_operator_action": "Rewrite GitHub mirror issue #97 so its status matches the live open board state.",
+      "posting_id": "p-13c5574312",
+      "rationale": "Live, funded, and has one available slot.",
+      "recommendation": "keep",
+      "source": "organic",
+      "tag": null,
+      "url": "https://gofrantic.com/bounties/p-13c5574312"
+    },
+    {
+      "bounty": 49,
+      "current_state": "open",
+      "next_operator_action": "Keep one row and continue exposing capacity rather than duplicating inventory.",
+      "posting_id": "p-0d641a030c",
+      "rationale": "One intentional multi-claim goodwill row does not overcrowd the board.",
+      "recommendation": "keep",
+      "source": "organic",
+      "tag": null,
+      "url": "https://gofrantic.com/bounties/p-0d641a030c"
+    },
+    {
+      "bounty": 43,
+      "current_state": "delivered",
+      "next_operator_action": "Complete review; reopen only if the submitted evidence is rejected.",
+      "posting_id": "p-aa9de6d1a9",
+      "rationale": "Delivered work is in the review lifecycle and should remain visible until judgment.",
+      "recommendation": "keep",
+      "source": "organic",
+      "tag": null,
+      "url": "https://gofrantic.com/bounties/p-aa9de6d1a9"
+    },
+    {
+      "bounty": 42,
+      "current_state": "accepted",
+      "next_operator_action": "Settle payout, then retain only in completed inventory.",
+      "posting_id": "p-d773487dd6",
+      "rationale": "Accepted work should remain visible until payout settles.",
+      "recommendation": "keep",
+      "source": "organic",
+      "tag": null,
+      "url": "https://gofrantic.com/bounties/p-d773487dd6"
+    },
+    {
+      "bounty": 36,
+      "current_state": "paid",
+      "next_operator_action": "Keep archived as paid evidence; do not return it to open inventory.",
+      "posting_id": "p-7108615d70",
+      "rationale": "Paid work is complete and belongs only in completed inventory.",
+      "recommendation": "close",
+      "source": "organic",
+      "tag": null,
+      "url": "https://gofrantic.com/bounties/p-7108615d70"
+    },
+    {
+      "bounty": 11,
+      "current_state": "delivered",
+      "next_operator_action": "Complete review and publish the resulting judgment.",
+      "posting_id": "p-8708204a88",
+      "rationale": "Delivered work is awaiting review and is not stale open inventory.",
+      "recommendation": "keep",
+      "source": "seeded",
+      "tag": null,
+      "url": "https://gofrantic.com/bounties/p-8708204a88"
+    }
+  ],
+  "observations": [
+    {
+      "id": "governed-board-read",
+      "observation": "The governed run discovered the public MCP manifest and called frantic.read_board.",
+      "evidence": "artifacts/dogfood-run.json",
+      "source_url": "https://api.gofrantic.com/mcp.json"
+    },
+    {
+      "id": "board-counts",
+      "observation": "The unique live inventory contained 55 bounties: 2 open, 2 delivered, 16 accepted, 31 paid, and 4 claimed.",
+      "evidence": "artifacts/dogfood-run.json",
+      "counts": {
+        "accepted": 16,
+        "claimed": 4,
+        "delivered": 2,
+        "open": 2,
+        "paid": 31,
+        "total": 55
+      }
+    },
+    {
+      "id": "six-bounty-pages",
+      "observation": "Six exact bounty pages were opened through frantic.get_bounty.",
+      "evidence": [
+        {
+          "number": 46,
+          "posting_id": "p-13c5574312",
+          "url": "https://gofrantic.com/bounties/p-13c5574312",
+          "api_url": "https://gofrantic.com/v1/bounties/46"
+        },
+        {
+          "number": 49,
+          "posting_id": "p-0d641a030c",
+          "url": "https://gofrantic.com/bounties/p-0d641a030c",
+          "api_url": "https://gofrantic.com/v1/bounties/49"
+        },
+        {
+          "number": 43,
+          "posting_id": "p-aa9de6d1a9",
+          "url": "https://gofrantic.com/bounties/p-aa9de6d1a9",
+          "api_url": "https://gofrantic.com/v1/bounties/43"
+        },
+        {
+          "number": 42,
+          "posting_id": "p-d773487dd6",
+          "url": "https://gofrantic.com/bounties/p-d773487dd6",
+          "api_url": "https://gofrantic.com/v1/bounties/42"
+        },
+        {
+          "number": 36,
+          "posting_id": "p-7108615d70",
+          "url": "https://gofrantic.com/bounties/p-7108615d70",
+          "api_url": "https://gofrantic.com/v1/bounties/36"
+        },
+        {
+          "number": 11,
+          "posting_id": "p-8708204a88",
+          "url": "https://gofrantic.com/bounties/p-8708204a88",
+          "api_url": "https://gofrantic.com/v1/bounties/11"
+        }
+      ]
+    },
+    {
+      "id": "five-curation-categories",
+      "observation": "Stale, superseded, duplicated, confusing, and overcrowded inventory were checked independently.",
+      "evidence": {
+        "confusing": {
+          "evidence": [
+            {
+              "bounty": 46,
+              "live_state": "open",
+              "live_url": "https://gofrantic.com/bounties/p-13c5574312",
+              "mirror_state_text": "Closed",
+              "mirror_url": "https://github.com/auscaster/frantic-board/issues/97"
+            }
+          ],
+          "rationale": "The public mirror body says Closed while the Frantic source of truth says open.",
+          "status": "finding"
+        },
+        "duplicated": {
+          "evidence": [],
+          "rationale": "No exact duplicate title exists in the unique live inventory.",
+          "status": "clean"
+        },
+        "overcrowded": {
+          "evidence": {
+            "goodwill_multi_claim_row": 49,
+            "open_numbers": [
+              46,
+              49
+            ],
+            "open_rows": 2
+          },
+          "rationale": "The board has two open rows; #49 exposes capacity in one row rather than duplicating entries.",
+          "status": "clean"
+        },
+        "stale": {
+          "evidence": [],
+          "rationale": "No currently open bounty is older than seven days.",
+          "status": "clean"
+        },
+        "superseded": {
+          "evidence": [
+            {
+              "number": 46,
+              "title": "Publish Sourcey docs for a second ecosystem"
+            },
+            {
+              "number": 49,
+              "title": "Give runx some love"
+            }
+          ],
+          "rationale": "The current open rows have distinct deliverables; no sampled open bounty supersedes another.",
+          "status": "clean"
+        }
+      }
+    },
+    {
+      "id": "mirror-mismatch-46",
+      "observation": "Frantic bounty #46 was open with one available slot while its public GitHub mirror body said Status: Closed.",
+      "impact": "A worker relying on the mirror can incorrectly skip a live funded bounty.",
+      "live_url": "https://gofrantic.com/bounties/p-13c5574312",
+      "api_url": "https://gofrantic.com/v1/bounties/46",
+      "mirror_url": "https://github.com/auscaster/frantic-board/issues/97",
+      "operator_comment_url": null
+    },
+    {
+      "id": "exact-bound-recommendations",
+      "observation": "Each audited bounty has an operator action bound to its exact bounty number, posting ID, source, state, and URL.",
+      "evidence": [
+        {
+          "bounty": 46,
+          "current_state": "open",
+          "next_operator_action": "Rewrite GitHub mirror issue #97 so its status matches the live open board state.",
+          "posting_id": "p-13c5574312",
+          "rationale": "Live, funded, and has one available slot.",
+          "recommendation": "keep",
+          "source": "organic",
+          "tag": null,
+          "url": "https://gofrantic.com/bounties/p-13c5574312"
+        },
+        {
+          "bounty": 49,
+          "current_state": "open",
+          "next_operator_action": "Keep one row and continue exposing capacity rather than duplicating inventory.",
+          "posting_id": "p-0d641a030c",
+          "rationale": "One intentional multi-claim goodwill row does not overcrowd the board.",
+          "recommendation": "keep",
+          "source": "organic",
+          "tag": null,
+          "url": "https://gofrantic.com/bounties/p-0d641a030c"
+        },
+        {
+          "bounty": 43,
+          "current_state": "delivered",
+          "next_operator_action": "Complete review; reopen only if the submitted evidence is rejected.",
+          "posting_id": "p-aa9de6d1a9",
+          "rationale": "Delivered work is in the review lifecycle and should remain visible until judgment.",
+          "recommendation": "keep",
+          "source": "organic",
+          "tag": null,
+          "url": "https://gofrantic.com/bounties/p-aa9de6d1a9"
+        },
+        {
+          "bounty": 42,
+          "current_state": "accepted",
+          "next_operator_action": "Settle payout, then retain only in completed inventory.",
+          "posting_id": "p-d773487dd6",
+          "rationale": "Accepted work should remain visible until payout settles.",
+          "recommendation": "keep",
+          "source": "organic",
+          "tag": null,
+          "url": "https://gofrantic.com/bounties/p-d773487dd6"
+        },
+        {
+          "bounty": 36,
+          "current_state": "paid",
+          "next_operator_action": "Keep archived as paid evidence; do not return it to open inventory.",
+          "posting_id": "p-7108615d70",
+          "rationale": "Paid work is complete and belongs only in completed inventory.",
+          "recommendation": "close",
+          "source": "organic",
+          "tag": null,
+          "url": "https://gofrantic.com/bounties/p-7108615d70"
+        },
+        {
+          "bounty": 11,
+          "current_state": "delivered",
+          "next_operator_action": "Complete review and publish the resulting judgment.",
+          "posting_id": "p-8708204a88",
+          "rationale": "Delivered work is awaiting review and is not stale open inventory.",
+          "recommendation": "keep",
+          "source": "seeded",
+          "tag": null,
+          "url": "https://gofrantic.com/bounties/p-8708204a88"
+        }
+      ]
+    },
+    {
+      "id": "production-receipt-verification",
+      "observation": "The run produced a content-addressed Ed25519 receipt that verifies in production mode.",
+      "receipt_ref": "runx:receipt:sha256:272106496e944b2c5cd0b557840f5a71ea64d2f3ab080ad0c5ed3cc739f3948f",
+      "verification": {
+        "schema": "runx.verify_verdict.v1",
+        "receipt_id": "sha256:272106496e944b2c5cd0b557840f5a71ea64d2f3ab080ad0c5ed3cc739f3948f",
+        "valid": true,
+        "digest": {
+          "status": "valid",
+          "expected": "sha256:ed2bfa0155cc6e3b49f5a09147f1f58c0e33fdd42733849a85ca97a43153f2da",
+          "actual": "sha256:ed2bfa0155cc6e3b49f5a09147f1f58c0e33fdd42733849a85ca97a43153f2da"
+        },
+        "content_address": {
+          "status": "valid",
+          "expected": "sha256:272106496e944b2c5cd0b557840f5a71ea64d2f3ab080ad0c5ed3cc739f3948f",
+          "actual": "sha256:272106496e944b2c5cd0b557840f5a71ea64d2f3ab080ad0c5ed3cc739f3948f"
+        },
+        "signature": {
+          "mode": "production",
+          "status": "valid",
+          "kid": "xingdi614-alt-frantic43-20260624-v0613"
+        },
+        "lineage": {
+          "status": "unverified",
+          "message": "single receipt verification cannot prove receipt-tree lineage"
+        },
+        "findings": []
+      },
+      "public_key": {
+        "kid": "xingdi614-alt-frantic43-20260624-v0613",
+        "algorithm": "Ed25519",
+        "public_key_base64": "+sahG39tMFoMjTZGDFk4WX/RR1yxrI6Z8afY5/6a06U="
+      }
+    }
+  ],
+  "receipt_ref": "runx:receipt:sha256:272106496e944b2c5cd0b557840f5a71ea64d2f3ab080ad0c5ed3cc739f3948f",
+  "receipt_file": "artifacts/receipt.json",
+  "verification_file": "artifacts/verification.json",
+  "report": "REPORT.md"
+}

@@ -1,0 +1,44 @@
+skill: frantic-board-health-audit
+version: "0.1.0"
+
+catalog:
+  kind: skill
+  audience: public
+  visibility: internal
+  role: canonical
+
+runx:
+  mutating: false
+  scopes:
+    - frantic.public.read
+  policy:
+    data_classification: public_board_data
+    network:
+      allowed:
+        - https://api.gofrantic.com/mcp.json
+        - https://api.gofrantic.com/mcp
+      forbidden:
+        - authenticated Frantic actions
+        - private agent tokens
+
+runners:
+  default:
+    default: true
+    type: cli-tool
+    command: /usr/bin/env
+    args:
+      - node
+      - run.mjs
+    scopes:
+      - frantic.public.read
+    outputs:
+      manifest_url: string
+      transport_url: string
+      discovered_tool: string
+      counts: object
+      sampled_bounties: array
+      category_checks: object
+      findings: array
+      recommendations: array
+      observations: array
+
