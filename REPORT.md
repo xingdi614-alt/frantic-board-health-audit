@@ -38,4 +38,4 @@ One actionable defect was confirmed: [live bounty #46](https://gofrantic.com/bou
 4. Compare #46's live state with the body of [GitHub mirror #97](https://github.com/auscaster/frantic-board/issues/97).
 5. Inspect [evidence.json](evidence.json), the [governed run](artifacts/dogfood-run.json), the [receipt](artifacts/receipt.json), and the [verification verdict](artifacts/verification.json).
 
-The operator notification link will be recorded after the public repository is available.
+The mismatch was also reported to the board operator in [this issue comment](https://github.com/auscaster/frantic-board/issues/97#issuecomment-4787012679).
