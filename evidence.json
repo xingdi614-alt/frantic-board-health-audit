@@ -17,6 +17,7 @@
     "paid": 31,
     "total": 55
   },
+  "runx_cli_version": "runx-cli 0.6.13",
   "sampled_bounties": [
     {
       "api_url": "https://gofrantic.com/v1/bounties/46",
@@ -497,7 +498,8 @@
     },
     {
       "id": "production-receipt-verification",
-      "observation": "The run produced a content-addressed Ed25519 receipt that verifies in production mode.",
+      "observation": "The governed run used runx-cli 0.6.13 and produced a content-addressed Ed25519 receipt that verifies in production mode.",
+      "runx_cli_version": "runx-cli 0.6.13",
       "receipt_ref": "runx:receipt:sha256:272106496e944b2c5cd0b557840f5a71ea64d2f3ab080ad0c5ed3cc739f3948f",
       "verification": {
         "schema": "runx.verify_verdict.v1",
